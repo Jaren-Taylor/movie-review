@@ -1,13 +1,11 @@
 <template>
   <div>
-
     <h2><em>Review Page</em></h2>
     <br>
     <h3>Movie title</h3>
     <b-form-input class="movie-entry" list="input-list" id="input-with-list" v-model="movie" placeholder="Enter title of movie" ></b-form-input>
     <b-form-datalist id="input-list" :options="movies"></b-form-datalist>
     <br> <br>
-
     <div class="genre-year">
       <label for="genre">Genre:</label>
       <b-form-input id="genre" v-model="genre" placeholder="Enter genre of movie"></b-form-input>
@@ -133,9 +131,7 @@ import axios from "axios";
           }
         }).then(res => {
       });
-
         this.onReset();
-
       }
     }
 
